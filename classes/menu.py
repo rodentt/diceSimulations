@@ -1,4 +1,4 @@
-from classes.simulator import Simulator 
+from classes.maxMinDieSimulator import maxMinDieSimulator 
 
 class Menu:
 
@@ -15,7 +15,7 @@ class Menu:
     """
 
     def __init__(self):
-        self._simulator = Simulator()
+        self._simulator = maxMinDieSimulator()
 
     def welcome(self):
         """ Welcomes user and instructs user on program use"""

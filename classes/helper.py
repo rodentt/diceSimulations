@@ -17,3 +17,12 @@ class Helper:
             doubleVal = pow(i, 2) * probArr[i - 1] + doubleVal
         
         return doubleVal - pow(mean, 2)
+    
+    def subtractArr(lArr, rArr, arrSize):
+        arr = [0] * arrSize
+        i = 0
+        for x in lArr:
+            arr[i] = abs(rArr[i] - x)
+            i = i + 1
+            
+        return arr
